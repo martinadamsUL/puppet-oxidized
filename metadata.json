@@ -1,19 +1,19 @@
 {
-  "name": "furhouse-oxidized",
-  "version": "0.1.2",
-  "author": "Wim Bonthuis <wim@500k.nl>",
-  "summary": "Configures Oxidized, a network device configuration backup tool.",
+  "name": "ctilley1407-oxidized",
+  "version": "0.1.3",
+  "author": "Chris Tilley",
+  "summary": "Forked from furhouse/puppet-oxidized. Configures Oxidized, a network device configuration backup tool.",
   "license": "Apache-2.0",
-  "source": "https://github.com/furhouse/puppet-oxidized",
-  "project_page": "https://github.com/furhouse/puppet-oxidized",
-  "issues_url": "https://github.com/furhouse/puppet-oxidized/issues",
+  "source": "https://github.com/ctilley1407/puppet-oxidized",
+  "project_page": "https://github.com/ctilley1407/puppet-oxidized",
+  "issues_url": "https://github.com/ctilley1407/puppet-oxidized/issues",
   "tags": [
     "oxidized"
   ],
   "dependencies": [
     {
-      "name": "camptocamp/systemd",
-      "version_requirement": ">= 0.4.0 < 0.5.0"
+      "name": "puppet/systemd",
+      "version_requirement": ">= 3.5.0 < 4.0.0"
     },
     {
       "name": "maestrodev/rvm",
