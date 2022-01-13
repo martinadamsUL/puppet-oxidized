@@ -40,10 +40,10 @@ class oxidized::install inherits oxidized  {
         }
       }
 
-      rvm_wrapper { 'oxidized':
-        ensure      => $oxidized::ensure,
-        target_ruby => "ruby-${oxidized::rvm_ruby_version}",
-      }
+      #rvm_wrapper { 'oxidized':
+      #  ensure      => $oxidized::ensure,
+      #  target_ruby => "ruby-${oxidized::rvm_ruby_version}",
+      #}
     }
     else {
 
