@@ -1,0 +1,13 @@
+# Managed by Puppet
+
+[Unit]
+Description=Oxidized - Network Device Configuration Backup Tool
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/rvm/gems/ruby-<%= scope.lookupvar('oxidized::rvm_ruby_version') %>/wrappers/oxidized
+KillSignal=SIGKILL
+User=oxidized
+
+[Install]
+WantedBy=multi-user.target

@@ -15,7 +15,7 @@ class oxidized::service inherits oxidized {
             owner  => 'root',
             group  => 'root',
             mode   => '0644',
-            source => "puppet:///modules/${module_name}/${module_name}.service",
+            content => template("${module_name}/service/${module_name}.service.erb"),
           }
         }
         'upstart': {
